@@ -12,18 +12,18 @@ end
 ap fuel_counter_upper(modules)
 
 
-def new_fuel(modules)
-  fuel = 0
-  modules.each do |mass|
-    while mass > 0
-      mass = mass / 3 - 2
-      fuel += mass
-    end
-  end
-  return fuel
-end
+# def new_fuel(modules)
+#   fuel = 0
+#   modules.each do |mass|
+#     while mass > 0
+#       mass = mass / 3 - 2
+#       fuel += mass
+#     end
+#   end
+#   return fuel
+# end
 
-ap new_fuel(modules)
+# ap new_fuel(modules)
 
 def another_fuel(mass)
   amount = [mass / 3 - 2, 0].max
